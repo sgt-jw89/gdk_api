@@ -9,7 +9,7 @@
 			"headers": [{ "key": "Access-Control-Allow-Origin", "value": "*" }]
 		},
 		{
-			"source": "https://gdk-api-2ns2.vercel.app/(.*)",
+			"source": "/gdk-api-2ns2.vercel.app/(.*)",
 			"headers": [{ "key": "Access-Control-Allow-Origin", "value": "*" }]
 		}
 	]

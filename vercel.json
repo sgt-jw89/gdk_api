@@ -9,15 +9,6 @@
 			"headers": [
 				{
 					"key": "Access-Control-Allow-Origin",
-					"value": "http://localhost:3000"
-				}
-			]
-		},
-		{
-			"source": "/gdk-api-2ns2.vercel.app/(.*)",
-			"headers": [
-				{
-					"key": "Access-Control-Allow-Origin",
 					"value": "https://gdk-frontend.vercel.app/*"
 				}
 			]

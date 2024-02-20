@@ -3,13 +3,14 @@
 	"public": true,
 	"regions": ["fra1"],
 	"rewrites": [{ "source": "/(.*)", "destination": "/api/$1" }],
-	"routes": [
+	"headers": [
 		{
-			"src": "/api/(.*)",
-			"methods": ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
-			"headers": {
-				"Access-Control-Allow-Origin": "*"
-			}
+			"source": "/(.*)",
+			"headers": [{ "key": "Access-Control-Allow-Origin", "value": "*" }]
+		},
+		{
+			"source": "https://gdk-api-2ns2.vercel.app/(.*)",
+			"headers": [{ "key": "Access-Control-Allow-Origin", "value": "*" }]
 		}
 	]
 }
